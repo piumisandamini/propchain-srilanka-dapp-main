@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon & Mobile Icons (Updated to your new logo) -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <meta name="theme-color" content="#07090e" />
+    <title>PropChain — Decentralized Real Estate Registry</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Global Web3 Styling & Design Tokens -->
+    <style>
+      :root {
+        --bg: #07090e;
+        --panel: rgba(15, 22, 33, 0.75);
+        --panel-solid: #0f1621;
+        --panel-2: rgba(22, 32, 48, 0.6);
+        --panel-2-solid: #162030;
+        --border: rgba(255, 255, 255, 0.08);
+        --border-hover: rgba(61, 220, 151, 0.35);
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #3ddc97;
+        --accent-glow: rgba(61, 220, 151, 0.25);
+        --accent-2: #5b8def;
+        --warning: #f5a623;
+        --danger: #ef5b5b;
+        --radius: 16px;
+        --radius-sm: 10px;
+        --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: 
+          radial-gradient(1200px 600px at 80% -10%, rgba(91, 141, 239, 0.12) 0%, transparent 60%),
+          radial-gradient(1000px 500px at -10% 110%, rgba(61, 220, 151, 0.1) 0%, transparent 60%),
+          var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1, h2, h3, h4 {
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 32px 24px 80px;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 28px;
+        margin-bottom: 24px;
+        backdrop-filter: blur(16px);
+      }
+
+      /* Custom Dark Web3 Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this application.</noscript>
+    
+    <!-- React Root Mount Node -->
+    <div id="root"></div>
+  </body>
+</html>

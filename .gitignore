@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Hardhat Build Artifacts & Cache
+backend/artifacts/
+backend/cache/
+
+# React Build Output
+frontend/build/
+frontend/dist/
+
+# Environment Variables & Private Keys
+.env
+.env.local
+
+# System Files
+.DS_Store
+Thumbs.dbnode_modules/
+node_modules/
+node_modules/
